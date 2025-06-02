@@ -40,7 +40,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <div class="login-container">
         <div class="login-card">
             <div class="login-header">
-                <img src="images/logo.png" alt="Логотип" class="logo">
                 <h1>Добро пожаловать</h1>
                 <p>Войдите в свой аккаунт</p>
             </div>
