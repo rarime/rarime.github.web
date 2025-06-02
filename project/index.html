@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Тур Агенство Лавандовый Путь</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gradient-to-b from-blue-50 to-white font-sans">
+  <!-- Header -->
+  <header class="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-6 sticky top-0 z-10">
+    <div class="container mx-auto text-center animate-fade-in relative">
+      <!-- Auth Links -->
+      <div class="auth-links">
+        <a href="register.php" class="register">Регистрация</a>
+        <a href="login.php" class="login">Вход</a>
+      </div>
+      
+      <h1 class="text-4xl font-bold">Тур Агенство Лавандовый Путь</h1>
+      <p class="mt-2 text-lg">Ваше путешествие начинается с нами</p>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="relative">
+    <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80" alt="Пляжный пейзаж" class="w-full h-96 object-cover">
+    <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+      <div class="text-center text-white animate-fade-in">
+        <h2 class="text-5xl font-bold text-white">Мечтайте. Путешествуйте. Отдыхайте.</h2>
+        <p class="mt-4 text-xl">Мы создаем незабываемые путешествия по всему миру.</p>
+        <a href="#contact" class="mt-6 inline-block px-6 py-3 bg-blue-500 hover:bg-blue-600 text-white rounded-lg transition duration-300">Связаться с нами</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us Section -->
+  <section class="container mx-auto py-12">
+    <h2 class="text-3xl font-bold text-center text-blue-600 animate-fade-in">Почему стоит выбрать нас?</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
+      <div class="card bg-white p-6 rounded-lg shadow-lg transition duration-300 animate-fade-in">
+        <img src="https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60" alt="Индивидуальный подход" class="w-full h-48 object-cover rounded-t-lg">
+        <h3 class="text-xl font-semibold mt-4 text-blue-600">Индивидуальный подход</h3>
+        <p class="mt-2 text-gray-600">Мы подбираем туры, учитывая ваши предпочтения и бюджет.</p>
+      </div>
+      <div class="card bg-white p-6 rounded-lg shadow-lg transition duration-300 animate-fade-in" style="animation-delay: 0.2s;">
+        <img src="https://images.unsplash.com/photo-1518609878373-06d740f60d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60" alt="Профессиональная команда" class="w-full h-48 object-cover rounded-t-lg">
+        <h3 class="text-xl font-semibold mt-4 text-blue-600">Профессиональная команда</h3>
+        <p class="mt-2 text-gray-600">Наши эксперты обеспечат безупречную организацию вашего отдыха.</p>
+      </div>
+      <div class="card bg-white p-6 rounded-lg shadow-lg transition duration-300 animate-fade-in" style="animation-delay: 0.4s;">
+        <img src="https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60" alt="Глобальное покрытие" class="w-full h-48 object-cover rounded-t-lg">
+        <h3 class="text-xl font-semibold mt-4 text-blue-600">Глобальное покрытие</h3>
+        <p class="mt-2 text-gray-600">Туры в любую точку мира с лучшими предложениями.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Services Section -->
+  <section class="container mx-auto py-12 bg-blue-50">
+    <h2 class="text-3xl font-bold text-center text-blue-600 animate-fade-in">Что мы предлагаем</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
+      <div class="card bg-white p-6 rounded-lg shadow-lg transition duration-300 animate-fade-in">
+        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60" alt="Пляжный отдых" class="w-full h-48 object-cover rounded-t-lg">
+        <h3 class="text-xl font-semibold mt-4 text-blue-600">Пляжный отдых</h3>
+        <p class="mt-2 text-gray-600">Расслабьтесь на лучших пляжах мира с нашими эксклюзивными турами.</p>
+      </div>
+      <div class="card bg-white p-6 rounded-lg shadow-lg transition duration-300 animate-fade-in" style="animation-delay: 0.2s;">
+        <img src="https://images.unsplash.com/photo-1499678329028-101435549a4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60" alt="Культурные туры" class="w-full h-48 object-cover rounded-t-lg">
+        <h3 class="text-xl font-semibold mt-4 text-blue-600">Культурные туры</h3>
+        <p class="mt-2 text-gray-600">Откройте для себя историю и культуру с нашими экскурсионными программами.</p>
+      </div>
+      <div class="card bg-white p-6 rounded-lg shadow-lg transition duration-300 animate-fade-in">
+  <img src="https://images.unsplash.com/photo-1483728642387-6c3bdd6c93e5?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60" 
+       alt="Активный отдых" 
+       class="w-full h-48 object-cover rounded-t-lg">
+  <h3 class="text-xl font-semibold mt-4 text-blue-600">Активный отдых</h3>
+  <p class="mt-2 text-gray-600">Походы, лыжи, дайвинг — приключения для активных путешественников.</p>
+    </div>
+      <div class="card bg-white p-6 rounded-lg shadow-lg transition duration-300 animate-fade-in" style="animation-delay: 0.2s;">
+        <img src="https://images.unsplash.com/photo-1530789253388-582c481c54b0?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60" alt="Круизы" class="w-full h-48 object-cover rounded-t-lg">
+        <h3 class="text-xl font-semibold mt-4 text-blue-600">Круизы</h3>
+        <p class="mt-2 text-gray-600">Роскошные морские путешествия с комфортом и стилем.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Form Section -->
+  <section id="contact" class="container mx-auto py-12">
+    <h2 class="text-3xl font-bold text-center text-blue-600 animate-fade-in">Свяжитесь с нами</h2>
+    <p class="text-center text-gray-600 mt-4">Оставьте свои данные, и мы свяжемся с вами для планирования вашего путешествия!</p>
+    <div class="max-w-lg mx-auto mt-8 bg-white p-8 rounded-lg shadow-lg animate-fade-in">
+      <form id="contact-form" action="submit.php" method="POST">
+        <div class="mb-4">
+          <label for="name" class="block text-gray-700 font-semibold">Имя</label>
+          <input type="text" id="name" name="name" required class="w-full px-4 py-2 mt-2 border border-blue-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-300">
+        </div>
+        <div class="mb-4">
+          <label for="email" class="block text-gray-700 font-semibold">Электронная почта</label>
+          <input type="email" id="email" name="email" required class="w-full px-4 py-2 mt-2 border border-blue-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-300">
+        </div>
+        <div class="mb-4">
+          <label for="phone" class="block text-gray-700 font-semibold">Телефон</label>
+          <input type="tel" id="phone" name="phone" required class="w-full px-4 py-2 mt-2 border border-blue-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-300">
+        </div>
+        <div class="mb-4">
+          <label for="message" class="block text-gray-700 font-semibold">Сообщение</label>
+          <textarea id="message" name="message" rows="4" class="w-full px-4 py-2 mt-2 border border-blue-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-300"></textarea>
+        </div>
+        <button type="submit" class="w-full px-6 py-3 bg-blue-500 hover:bg-blue-600 text-white rounded-lg transition duration-300">Отправить</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-6">
+    <div class="container mx-auto text-center">
+      <p>© 2025 Тур Агенство Лавандовый Путь. Все права защищены.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Trigger animations on scroll
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animate-fade-in');
+        }
+      });
+    });
+    document.querySelectorAll('.card, #contact').forEach(el => observer.observe(el));
+
+    // Form submission alert (placeholder for backend integration)
+    document.getElementById('contact-form').addEventListener('submit', (e) => {
+      // Backend handles submission; alert for user feedback
+      alert('Ваши данные отправлены! Мы свяжемся с вами в ближайшее время.');
+    });
+
+    // Check if user is logged in and update auth links
+    document.addEventListener('DOMContentLoaded', () => {
+      fetch('check_auth.php')
+        .then(response => response.json())
+        .then(data => {
+          if (data.authenticated) {
+            const authLinks = document.querySelector('.auth-links');
+            authLinks.innerHTML = `
+              <a href="profile.php" class="login">Мой профиль</a>
+              <a href="logout.php" class="register">Выйти</a>
+            `;
+          }
+        });
+    });
+  </script>
+</body>
+</html>
