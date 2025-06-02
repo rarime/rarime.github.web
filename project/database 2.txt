@@ -1,0 +1,56 @@
+-- Create database if it doesn't exist
+CREATE DATABASE IF NOT EXISTS travel_agency_db;
+USE travel_agency_db;
+
+-- Create users table if it doesn't exist
+CREATE TABLE IF NOT EXISTS users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(50) NOT NULL UNIQUE,
+    email VARCHAR(100) NOT NULL UNIQUE,
+    password_hash VARCHAR(255) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE IF NOT EXISTS users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(50) NOT NULL UNIQUE,
+    email VARCHAR(100) NOT NULL UNIQUE,
+    password_hash VARCHAR(255) NOT NULL,
+    full_name VARCHAR(100),
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+-- Create posts table if it doesn't exist
+CREATE TABLE IF NOT EXISTS posts (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    user_id INT NOT NULL,
+    title VARCHAR(100) NOT NULL,
+    content TEXT NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
+);
+
+-- Create contacts table if it doesn't exist
+CREATE TABLE IF NOT EXISTS contacts (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    email VARCHAR(100) NOT NULL,
+    phone VARCHAR(20) NOT NULL,
+    message TEXT,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+-- Insert sample data into users (only if not already present)
+INSERT IGNORE INTO users (name, email, password_hash) VALUES
+('Админ', 'admin@example.com', 'hashed_password_example'),
+('Пользователь1', 'user1@example.com', 'hashed_password_example');
+
+-- Insert sample data into posts
+INSERT IGNORE INTO posts (user_id, title, content) VALUES
+(1, 'Добро пожаловать в Лавандовый Путь', 'Это первый пост на нашем сайте туристического агентства!'),
+(1, 'Лучшие направления 2025', 'Ознакомьтесь с самыми популярными направлениями для путешествий.');
+
+-- Insert sample data into contacts
+INSERT IGNORE INTO contacts (name, email, phone, message) VALUES
+('Иван Иванов', 'ivan@example.com', '+79991234567', 'Хочу заказать тур на Мальдивы.'),
+('Анна Петрова', 'anna@example.com', '+79998765432', 'Интересуют культурные туры по Европе.');
